@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Swagger JSON Beautifier",
+  "version": "1.0",
+  "description": "Beautify swagger.json using SwaggerUI.",
+  "permissions": ["scripting", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_title": "swaggerviewer"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["swagger-ui/*"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

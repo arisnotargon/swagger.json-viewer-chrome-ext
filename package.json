@@ -1,0 +1,14 @@
+{
+  "name": "swagger.json-viewer-chrome-ext",
+  "version": "1.0.0",
+  "description": "This is a Chrome browser extension that uses https://github.com/swagger-api/swagger-ui/ to render the swagger.json file opened in the current tab, whether it is a local file or a remote file.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "git submodule update --init --recursive && node build.js"
+  },
+  "author": "arisnotargon",
+  "license": "ISC",
+  "devDependencies": {
+    "archiver": "^7.0.1"
+  }
+}
